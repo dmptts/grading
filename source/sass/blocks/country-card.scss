@@ -1,0 +1,73 @@
+.country-card {
+  position: relative;
+
+  display: block;
+  width: 350px;
+  min-height: 430px;
+
+  &:hover::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    min-height: 430px;
+
+    background-color: rgba($color-black, 0.6);
+  }
+
+  &:hover::after {
+    position: absolute;
+    content: "Смотреть подробнее";
+    top: 50%;
+    left: 50%;
+
+    width: 266px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+.country-card__image {
+  width: 350px;
+  height: 430px;
+}
+
+.country-card__heading {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  width: 215px;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 16px;
+
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 500;
+  color: $color-black;
+
+  background-color: #ffffff;
+
+  transform: translateX(-50%);
+}
+
+.country-card__link {
+  display: none;
+}

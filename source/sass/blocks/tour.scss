@@ -1,0 +1,49 @@
+.tour {
+  margin-bottom: 97px;
+}
+
+.tour__container {
+  padding-top: 197px;
+}
+
+.tour__heading {
+  width: 358px;
+  margin-bottom: 30px;
+
+  &::after {
+    width: 228px;
+  }
+}
+
+.tour__text {
+  width: 328px;
+  margin: 0;
+  margin-bottom: 55px;
+
+  letter-spacing: -0.45px;
+}
+
+.tour__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tour__item {
+  margin-bottom: 102px;
+
+  line-height: 0;
+
+  &:last-child {
+    margin-left: 120px;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  &:nth-last-child(2) {
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+}

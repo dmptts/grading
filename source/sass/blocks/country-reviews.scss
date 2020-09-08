@@ -1,0 +1,56 @@
+.country-reviews {
+  width: 382px;
+  min-height: 367px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  background-color: white;
+}
+
+.country-reviews__heading {
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 500;
+  letter-spacing: -0.7px;
+
+  &::after {
+    width: 68px;
+    height: 2px;
+  }
+}
+
+.country-reviews__review {
+  margin: 0;
+}
+
+.country-reviews__text {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  letter-spacing: -0.4px;
+}
+
+.country-reviews__author {
+  display: flex;
+  align-items: center;
+
+  font-family: "Poppins", "Arial", sans-serif;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+
+  & span {
+    margin-top: 7px;
+  }
+}
+
+.country-reviews__userpic {
+  width: 38px;
+  height: 38px;
+  margin-right: 16px;
+}

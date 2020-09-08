@@ -1,0 +1,46 @@
+.country-tab {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.country-tab__info {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  margin-right: 100px;
+}
+
+.country-tab__heading {
+  margin-bottom: 30px;
+  padding-bottom: 24px;
+
+  &::after {
+    height: 3px;
+  }
+}
+
+.country-tab__description {
+  margin: 0;
+  margin-bottom: 50px;
+  letter-spacing: -0.45px;
+}
+
+.country-tab__image {
+  width: 430px;
+  height: 596px;
+  margin-top: -13px;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.country-tab__btn {
+  width: 250px;
+}
+
+.country-tab__reviews {
+  position: absolute;
+  top: 100px;
+  right: 0;
+}

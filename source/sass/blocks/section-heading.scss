@@ -1,0 +1,23 @@
+.section-heading {
+  position: relative;
+  margin: 0;
+  padding-bottom: 35px;
+
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: 600;
+  color: $color-dark-blue;
+  letter-spacing: -1.2px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+
+    width: 175px;
+    height: 4px;
+
+    background-color: $color-red;
+  }
+}

@@ -1,0 +1,40 @@
+.tabs {
+  min-height: 1220px;
+
+  background-image: url("../img/bg-tabs-desktop.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center 133px;
+}
+
+.tabs__controls {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+
+  width: 902px;
+  margin-bottom: 93px;
+  padding-bottom: 14px;
+
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+}
+
+.tabs__control-item {
+  line-height: 0;
+}
+
+.tabs__control-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+
+  color: rgba(44, 46, 63, 0.3);
+
+  &--active {
+    color: $color-red;
+  }
+}
+
+.tabs__list {
+  @include list-reset;
+}

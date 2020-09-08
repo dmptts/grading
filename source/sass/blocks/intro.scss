@@ -1,0 +1,54 @@
+.intro {
+  min-height: 860px;
+
+  background-image: url("../img/bg-intro.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.intro__container {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.intro__inner-container {
+  flex-direction: column;
+  width: 470px;
+  padding-top: 185px;
+  padding-right: 55px;
+}
+
+.intro__heading {
+  width: 355px;
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -1.3px;
+}
+
+.intro__text {
+  margin: 0;
+  margin-bottom: 36px;
+
+  line-height: 27px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.intro__btn {
+  width: 340px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  text-align: left;
+
+  background-image: url("../img/icon-arrow.svg");
+  background-size: 14px;
+  background-position: top 30px right 40px;
+  background-repeat: no-repeat;
+}

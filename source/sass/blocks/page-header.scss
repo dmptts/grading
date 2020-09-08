@@ -1,0 +1,11 @@
+.page-header__container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  padding-top: 3px;
+}
+
+.page-header__nav {
+  margin-right: 14px;
+}

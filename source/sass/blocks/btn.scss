@@ -1,0 +1,21 @@
+.btn {
+  display: block;
+  width: 250px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  background-color: $color-red;
+  border: none;
+
+  &:hover {
+    background-color: $color-orange;
+  }
+}

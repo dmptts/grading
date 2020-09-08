@@ -1,0 +1,40 @@
+.main-nav__list {
+  @include list-reset;
+  display: flex;
+}
+
+.main-nav__item {
+  &--about {
+    margin-right: 41px;
+  }
+
+  &--price {
+    margin-right: 58px;
+  }
+}
+
+.main-nav__link {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-black;
+
+  &--phone {
+    padding-left: 36px;
+
+    font-size: 18px;
+    line-height: 32px;
+    color: $color-red;
+    text-decoration: underline;
+
+    background-image: url("../img/icon-phone-shadow.svg");
+    background-size: 30px;
+    background-position: -4px 0;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    color: $color-red;
+  }
+}
