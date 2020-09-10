@@ -7,13 +7,19 @@
   background-position: center 133px;
 }
 
+.tabs__controls-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .tabs__controls {
   @include list-reset;
   display: flex;
   justify-content: space-between;
 
   width: 902px;
-  margin-bottom: 93px;
   padding-bottom: 14px;
 
   border-bottom: 1px solid rgba(44, 46, 63, 0.3);
@@ -37,4 +43,43 @@
 
 .tabs__list {
   @include list-reset;
+}
+
+@media (max-width: $desktop-width) {
+  .tabs {
+    min-height: auto;
+
+    background-image: url("../../img/bg-tab-greece-tablet.jpg");
+    background-size: 100% 415px;
+    background-repeat: no-repeat;
+    background-position: center bottom 32px;
+  }
+
+  .tabs__controls-container {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+  }
+
+  .tabs__controls {
+    justify-content: flex-start;
+    min-width: 100%;
+    min-height: 37px;
+    margin: 0;
+  }
+
+  .tabs__control-item {
+    margin-right: 99px;
+
+    letter-spacing: -0.4px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

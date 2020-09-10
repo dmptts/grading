@@ -16,7 +16,8 @@
       <a class="page-header__logo">
         <svg class="page-header__logo-icon" width="57" height="22"><use xlink:href="#icon-logo"></use></svg>
       </a>
-      <nav class="page-header__nav main-nav">
+      <button class="page-header__toggle page-header__toggle--closed">Показать/скрыть меню</button>
+      <nav class="page-header__nav page-header__nav--closed main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--about"><a class="main-nav__link" href="#about">О путешествии</a></li>
           <li class="main-nav__item main-nav__item--price"><a class="main-nav__link" href="#price">Цены</a></li>
@@ -42,31 +43,46 @@
         <ul class="tour__list">
           <li class="tour__item">
             <a class="country-card" href="#">
-              <img class="country-card__image" src="img/bg-card-greece-desktop.jpg" alt="Здания на вершине горы" width="350" height="430">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/bg-card-greece-tablet.jpg">
+                <img class="country-card__image" src="img/bg-card-greece-desktop.jpg" alt="Здания на вершине горы" width="350" height="430">
+              </picture>
               <h3 class="country-card__heading">Греция</h3>
             </a>
           </li>
           <li class="tour__item">
             <a class="country-card" href="#">
-              <img class="country-card__image" src="img/bg-card-albania-desktop.jpg" alt="Пляж снятый с высоты птичьего полета" width="350" height="430">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/bg-card-albania-tablet.jpg">
+                <img class="country-card__image" src="img/bg-card-albania-desktop.jpg" alt="Пляж снятый с высоты птичьего полета" width="350" height="430">
+              </picture>
               <h3 class="country-card__heading">Албания</h3>
             </a>
           </li>
           <li class="tour__item">
             <a class="country-card" href="#">
-              <img class="country-card__image" src="img/bg-card-macedonia-desktop.jpg" alt="Античное здание и море за ним, снятые с возвыщенности" width="350" height="430">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/bg-card-macedonia-tablet.jpg">
+                <img class="country-card__image" src="img/bg-card-macedonia-desktop.jpg" alt="Античное здание и море за ним, снятые с возвыщенности" width="350" height="430">
+              </picture>
               <h3 class="country-card__heading">Македония</h3>
             </a>
           </li>
           <li class="tour__item">
             <a class="country-card" href="#">
-              <img class="country-card__image" src="img/bg-card-montenegro-desktop.jpg" alt="Голубая река и лесистые берега с видом сверху" width="350" height="430">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/bg-card-montenegro-tablet.jpg">
+                <img class="country-card__image" src="img/bg-card-montenegro-desktop.jpg" alt="Голубая река и лесистые берега с видом сверху" width="350" height="430">
+              </picture>
               <h3 class="country-card__heading">Черногория</h3>
             </a>
           </li>
           <li class="tour__item">
             <a class="country-card" href="#">
-              <img class="country-card__image" src="img/bg-card-сroatia-desktop.jpg" alt="Пещера с водой" width="350" height="430">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/bg-card-сroatia-tablet.jpg">
+                <img class="country-card__image" src="img/bg-card-сroatia-desktop.jpg" alt="Пещера с водой" width="350" height="430">
+              </picture>
               <h3 class="country-card__heading">Хорватия</h3>
             </a>
           </li>
@@ -74,8 +90,8 @@
       </div>
     </section>
     <section class="tabs">
-      <div class="tabs__container container">
-        <h2 class="visually-hidden">Подробнее</h2>
+      <h2 class="visually-hidden">Подробнее</h2>
+      <div class="tabs__controls-container">
         <ul class="tabs__controls">
           <li class="tabs__control-item"><a class="tabs__control-link tabs__control-link--active" href="#">Греция</a></li>
           <li class="tabs__control-item"><a class="tabs__control-link" href="#">Албания</a></li>
@@ -83,6 +99,8 @@
           <li class="tabs__control-item"><a class="tabs__control-link" href="#">Черногория</a></li>
           <li class="tabs__control-item"><a class="tabs__control-link" href="#">Хорватия</a></li>
         </ul>
+      </div>
+      <div class="tabs__container container">
         <ul class="tabs__list">
           <li class="tabs__item country-tab">
             <div class="country-tab__info">
@@ -90,7 +108,6 @@
               <p class="country-tab__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
               <a class="country-tab__btn btn" href="#">Купить тур сейчас</a>
             </div>
-            <img class="country-tab__image" src="img/bg-tab-greece-desktop.jpg" alt="Здания на вершине горы" width="430" height="596">
             <div class="country-tab__reviews country-reviews">
               <h4 class="country-reviews__heading section-heading">Отзывы</h4>
               <blockquote class="country-reviews__review">

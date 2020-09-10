@@ -21,3 +21,17 @@
     background-color: $color-red;
   }
 }
+
+@media (max-width: $desktop-width) {
+  .section-heading {
+    padding-bottom: 0;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 600;
+    letter-spacing: normal;
+  }
+
+  &::after {
+    display: none;
+  }
+}

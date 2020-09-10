@@ -71,3 +71,15 @@
 .country-card__link {
   display: none;
 }
+
+@media (max-width: $desktop-width) {
+  .country-card {
+    width: 288px;
+    min-height: 425px;
+  }
+
+  .country-card__image {
+    width: 288px;
+    height: 425px;
+  }
+}

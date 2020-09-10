@@ -3,6 +3,11 @@
 
   display: flex;
   justify-content: flex-start;
+  padding-top: 93px;
+
+  &::after {
+    display: none;
+  }
 }
 
 .country-tab__info {
@@ -41,6 +46,56 @@
 
 .country-tab__reviews {
   position: absolute;
-  top: 100px;
+  top: 193px;
   right: 0;
+  z-index: 1;
+}
+
+@media (max-width: $desktop-width) {
+  .country-tab {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 17px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 32px;
+      left: 0;
+
+      width: 700px;
+      height: 415px;
+
+      background-image: url("../img/bg-tab-greece-tablet.jpg");
+      background-repeat: no-repeat;
+      background-position: center bottom 32px;
+    }
+  }
+
+  .country-tab__info {
+    width: auto;
+    margin: 0;
+    margin-bottom: 110px;
+  }
+
+  .country-tab__reviews {
+    position: static;
+  }
+
+  .country-tab__heading {
+    margin-bottom: 21px;
+    padding-bottom: 0;
+
+    text-align: center;
+  }
+
+  .country-tab__description {
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  .country-tab__btn {
+    margin: 0 auto;
+  }
 }

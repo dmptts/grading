@@ -52,3 +52,48 @@
   background-position: top 30px right 40px;
   background-repeat: no-repeat;
 }
+
+@media (max-width: $desktop-width) {
+  .intro {
+    min-height: 344px;
+
+    background-image: url("../img/bg-intro-tablet.jpg");
+  }
+
+  .intro__container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .intro__inner-container {
+    align-items: center;
+    width: 400px;
+    padding: 0;
+    padding-top: 59px;
+  }
+
+  .intro__heading {
+    width: 100%;
+    margin-bottom: 16px;
+
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: normal;
+  }
+
+  .intro__text {
+    margin-bottom: 10px;
+
+    text-align: center;
+  }
+
+  .intro__btn {
+    width: 250px;
+    margin: 0 auto;
+
+    background-position: top 19px right 40px;
+  }
+}
